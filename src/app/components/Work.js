@@ -1,30 +1,27 @@
-import Button from "./UI/Button";
-
 export default function Work() {
   return (
-    <div className="mt-16 px-28 flex flex-col items-center">
-      <h2 className="text-4xl">Our Beautiful Works</h2>
-      <p className="my-6">
+    <div className="bg-white text-center text-black mt-16 md:px-28 px-6 pt-16 flex flex-col items-center">
+      <h2 className="md:text-4xl text-2xl font-bold">Our Beautiful Works</h2>
+      <p className="md:w-[50%] my-4 md:text-md text-sm text-gray-800">
         We help our clients grow their bottom-line with clear and professional
         websites.
       </p>
-      <Button/>
-      <div className="mt-16 w-full grid grid-cols-4 gap-0">
-        <div className="mt-16">
-            <img src="https://picsum.photos/seed/picsum/300/200" width={200} />
-            <img src="https://picsum.photos/seed/picsum/300/200" width={200} />
+      <div className="md:mt-16 mt-8 w-full grid md:grid-cols-4 grid-cols-2 md:gap-8 gap-4">
+        <div className="md:mt-16">
+          <img src="./work/1.png" className="w-full" />
+          <img src="./work/2.png" className="w-full mt-8" />
         </div>
         <div>
-            <img src="https://picsum.photos/seed/picsum/300/200" width={200} />
-            <img src="https://picsum.photos/seed/picsum/300/200" width={200} />
+          <img src="./work/3.png" className="w-full" />
+          <img src="./work/4.png" className="w-full mt-8" />
         </div>
-        <div className="mt-16">
-            <img src="https://picsum.photos/seed/picsum/300/200" width={200} />
-            <img src="https://picsum.photos/seed/picsum/300/200" width={200} />
+        <div className="md:mt-16">
+          <img src="./work/5.png" className="w-full" />
+          <img src="./work/6.png" className="w-full mt-8" />
         </div>
         <div>
-            <img src="https://picsum.photos/seed/picsum/300/200" width={200} />
-            <img src="https://picsum.photos/seed/picsum/300/200" width={200} />
+          <img src="./work/1.png" className="w-full" />
+          <img src="./work/2.png" className="w-full mt-8" />
         </div>
       </div>
     </div>

@@ -1,10 +1,14 @@
-export default function Button() {
+export default function Button({ children, mode = "container", border }) {
   return (
     <button
       type="button"
-      class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+      className={`bg-${
+        mode === "text"
+          ? `transparent ${border ? "border" : "text-white"} rounded-md border-black`
+          : "[#B9FD50]"
+      } text-black font-medium rounded-lg text-sm md:px-8 px-6 py-3 me-2 mb-2 focus:outline-none`}
     >
-      Get Started
+      {children}
     </button>
   );
 }

@@ -1,45 +1,15 @@
 import Button from "./UI/Button";
-import Triangle from "./UI/Triangle";
 
-function Step() {
+export default function Process({ title, subtitle, description }) {
   return (
-    <div>
-      <div className="flex">
-        <span className="flex items-center justify-center bg-white p-8 w-fit rounded-[50%]">
-          <img src="./icon.svg" width={50} />
+    <div className="mt-20 md:px-28 px-6 flex flex-col md:items-start md:text-start text-center items-center">
+      <h2 className="text-xs md:text-sm text-font text-[#B9FD50] capitalize">{title}</h2>
+      <div className="mt-2 flex md:flex-row flex-col md:gap-8 gap-2">
+        <p className="text-2xl md:text-4xl font-bold md:text-start text-center">{subtitle}</p>
+        <span className="md:w-[60%] md:text-start text-center">
+          <p className="mb-4 text-sm md:text-md text-gray-300">{description}</p>
+          <Button>See Pricing</Button>
         </span>
-        <Triangle />
-      </div>
-      <h2 className="mt-6">Subscribe & get started</h2>
-      <p className="mt-4 text-gray-400">
-        Submit as many design tasks as you need without worrying about
-        individual project fees.
-      </p>
-    </div>
-  );
-}
-
-export default function Process() {
-  return (
-    <div className="mt-16 px-28">
-      <h2 className="capitalize">How We Work</h2>
-      <div className="mt-2 flex gap-8">
-        <p className="text-4xl">
-          Get a dedicated design team at fraction of the cost.
-        </p>
-        <span>
-          <p className="mb-4 text-gray-400">
-            Grow your brand with high-quality design for a flat monthly fee.
-            Work with senior designers. Subscribe and make as many requests as
-            you need - no limits.
-          </p>
-          <Button></Button>
-        </span>
-      </div>
-      <div className="mt-16 flex gap-8">
-        <Step />
-        <Step />
-        <Step />
       </div>
     </div>
   );
