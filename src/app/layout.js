@@ -22,9 +22,6 @@ export const metadata = {
   title: "Mapsily - Marketing Agency",
   description:
     "Mapsily is the leading marketing agency offering SEO, social media, PPC, Web Design, Influencer Marketing, Video Production, etc.",
-  twitter: {
-    card: "summary_large-image",
-  },
 };
 
 export default function RootLayout({ children }) {
