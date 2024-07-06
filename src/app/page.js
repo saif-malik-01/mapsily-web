@@ -31,7 +31,6 @@ export default function Home() {
       />
       <Benefits />
       <Testimonial />
-      <Pricing/>
       <Blogs />
       <FAQ />
       <Footer />

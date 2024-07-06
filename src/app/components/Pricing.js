@@ -48,9 +48,7 @@ export default function Pricing() {
         Senior experts. On-demand requests. Fast turnarounds. Flat monthly fee.
         Cancel anytime.
       </span>
-      <div className="mt-16 grid md:grid-cols-3 grid-cols-1 gap-8">
-        <Card />
-        <Card />
+      <div className="mt-16 flex items-center justify-center">
         <Card />
       </div>
     </div>

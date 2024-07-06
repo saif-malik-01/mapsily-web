@@ -14,13 +14,13 @@ function PriceCard() {
         <h4 className="md:w-[40%] text-center text-gray-300">
           Jump on a membership and start requesting designs right away!
         </h4>
-        <Button>See Pricing</Button>
+        <Button href="tel:+919389586440">See Pricing</Button>
       </div>
     </div>
   );
 }
 
-export function Question() {
+export function Question({ question, answer }) {
   const [show, setShow] = useState(false);
 
   return (
@@ -29,17 +29,17 @@ export function Question() {
       className="cursor-pointer mt-6 bg-black p-4 rounded-xl text-white gap-6"
     >
       <div className="flex justify-between items-center">
-        <p>Do you have specific princing plans to show?</p>
+        <p>{question}</p>
         <span className="p-1 bg-[#B9FD50] rounded-[50%]">
-          {show ? <LuChevronUp color="black" size={24} /> :  <LuChevronDown color="black" size={24} />}
+          {show ? (
+            <LuChevronUp color="black" size={24} />
+          ) : (
+            <LuChevronDown color="black" size={24} />
+          )}
         </span>
       </div>
-      <div
-        className={`${
-          show ? "block" : "hidden"
-        } text-gray-300 mt-4`}
-      >
-        <p>asda asd asd asd asd asd asd asd</p>
+      <div className={`${show ? "max-h-[1000px]" : "max-h-[0px]"} transition-all ease-in-out duration-400 overflow-hidden w-full text-gray-300`}>
+        <p>{answer}</p>
       </div>
     </div>
   );
@@ -53,18 +53,29 @@ export default function FAQ() {
         Providing answers to your questions
       </span>
       <div className="md:w-[38%] w-[90%] md:mb-[28%] mb-[80%]">
-        <Question />
-        <textarea
-          className="mt-6 w-full p-8 border-black outline-none border rounded-xl"
-          placeholder="Ash us what you want to know..."
-          multiple
+        <Question
+          question="What is digital marketing?"
+          answer="In the simplest way, we may describe digital marketing as a marketing tool that includes digital interface and/or which involves a phone, laptop, tablet, or another electronic device connected to internet for communication.
+For example, a social media post, a paid ad on Google or Facebook , SEO efforts, a blog post, an email, or an app are some of the most popular mediums to carry digital marketing. "
         />
-        <span className="mt-4 gap-8 flex justify-between items-center">
-          <p className="text-sm text-gray-400">
-            We will answer your questions via email within 48 hours.
-          </p>
-          <Button>Send</Button>
-        </span>
+        <Question
+          question="Why do you need digital marketing? "
+          answer="Digital and online channels have rapidly and deeply penetrated human lives which necessitates any and every form of business to be digitally agile The reality is that the digital environment isn’t going away anytime soon and it is going to peak in coming years.
+The business would need a strong and dynamic presence on world of internet to catch up with the latest generation preferences and a large chunk of consumers are using digital as the first interface of their buying journey. Besides, digital marketing has the added benefit of being measurable and flexible. "
+        />
+        <Question
+          question="Do I really need a website?"
+          answer="Yes! Word of mouth can be great, but a majority of consumers find and research companies online before making any purchases. An online presence gives your company credibility and boosts brand awareness. Plus, websites are an avenue for endless marketing strategies, including e-commerce, online customer service, and consumer engagement. "
+        />
+        <Question
+          question="Can I do it myself or do I need an agency?"
+          answer="That depends on who you are, and scale of your business. Many business owners, marketers or entrepreneurs may do some part of digital marketing themselves however it may compromise their core work. On the other hand, an agency can be helpful in terms of devising a coherent strategy, allowing you to make use of experts to get better results, and figuring out where to best spend your money.
+So eventually it depends on your skills, finances and scale of business to rope in a media agency or not. "
+        />
+        <Question
+          question="How much does digital marketing cost? "
+          answer="This is the most asked question by start ups or those who are new to digital marketing and much like any other marketing campaign, costs can vary dramatically from business to business. However, unlike traditional marketing, digital marketing cost is relatively lower and marketing spend is more measurable than traditional ways. You may need to spend higher depending on nature of business, geography and competition. That said the digital spend is variable and can be controlled by businesses depending on their marketing budget.  "
+        />
       </div>
       <PriceCard />
     </div>

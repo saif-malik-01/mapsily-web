@@ -1,17 +1,15 @@
-function Card() {
+import Image from "next/image";
+
+function Card({ src, title, subtitle, description }) {
   return (
-    <div className="flex md:flex-row flex-col p-8 gap-8 items-center justify-between rounded-xl border border-lime-700 text-white">
-      <img src="./icon.svg" width={200} />
+    <div className="cursor-pointer flex md:flex-row flex-col gap-6 pr-6 items-center justify-between rounded-xl border border-lime-700 text-white">
+      <Image alt={"blog-" + title} src={src} width={220} height={220} />
       <div className="flex flex-col gap-2">
         <span className="md:text-sm text-xs font-medium text-[#B9FD50]">
-          BRANDING
+          {title}
         </span>
-        <h3 className="md:text-2xl text-xl font-bold">
-          What is the branding, and what we need it?
-        </h3>
-        <p className="md:text-md text-sm text-gray-400">
-          On the other hand, we denounce with righteous indignation and…
-        </p>
+        <h3 className="md:text-2xl text-xl font-bold">{subtitle}</h3>
+        <p className="md:text-md text-sm text-gray-400">{description}</p>
       </div>
     </div>
   );
@@ -24,16 +22,20 @@ export default function Blogs() {
       <p className="font-bold text-4xl">News & Articles</p>
       <span className="text-gray-200">Best Articles to get started</span>
       <div className="mt-16 grid md:grid-cols-2 grid-cols-1 gap-8">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <Card
+          src="/article-1.png"
+          title="BRANDING"
+          subtitle="What is the branding, 
+and what we need it?"
+          description="On the other hand, we denounce with righteous indignation and…"
+        />
+        <Card
+          src="/article-2.png"
+          title="SOCIAL MEDIA MANAGEMENT"
+          subtitle="How to use social media for good?"
+          description="Now a days social media is at boom, everyone has at least one..."
+        />
       </div>
-      <button className="mt-8 md:px-6 px-4 py-4 border border-lime-700 text-[#A5D96F] rounded-md">
-        LOAD MORE
-      </button>
     </div>
   );
 }

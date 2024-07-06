@@ -20,9 +20,6 @@ export default function Capabilities() {
         <Button>Digital ads</Button>
         <Button>Wireframes</Button>
       </div>
-      <Button mode="text" border={false}>
-        Load More
-      </Button>
     </div>
   );
 }

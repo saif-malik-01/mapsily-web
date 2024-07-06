@@ -1,25 +1,39 @@
+import Image from "next/image";
+
 function Card() {
   return (
     <div className="md:w-[80%] w-[90%] bg-gray-50 flex md:p-16 p-8 items-center justify-between rounded-xl border text-black">
       <div className="md:w-[60%] h-full flex flex-col justify-center">
-        <h3>Logo</h3>
+        <Image
+          alt="fuelcab-logo"
+          src="https://fuelcab.com/assets/svg/logo-fuelcab.svg"
+          width={150}
+          height={150}
+        />
         <div className="mt-6">
           <h3 className="md:text-3xl text-xl font-bold">
-            Kornix is the best digital agency i have ever seen! Highly
+            Mapsilty is the best digital agency i have ever seen! Highly
             Recommended!
           </h3>
           <p className="mt-4">
-            I recently hired Ideapeel for a custom web development project and
-            couldn't be happier with the results. The team was able to bring my
-            unique ideas to life and create a website that truly stands out.
+            I recently hired Mapsilty for a custom web development project and
+            couldn&apos;t be happier with the results. The team was able to
+            bring my unique ideas to life and create a website that truly stands
+            out.
           </p>
         </div>
         <div className="mt-6">
-          <p className="font-bold">Loreza</p>
-          <span>Director of Gymstory</span>
+          <p className="font-bold">Sajid Obama</p>
+          <span>CEO, FuelCab India</span>
         </div>
       </div>
-      <img src="./icon.svg" className="hidden md:block" width={200} />
+      <Image
+        alt="fuelcab-ceo-sajid-obama"
+        src="/sajid-obama.png"
+        className="hidden md:block rounded-[50%]"
+        width={250}
+        height={250}
+      />
     </div>
   );
 }
