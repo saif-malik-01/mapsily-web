@@ -48,7 +48,7 @@ export function Question({ question, answer }) {
 export default function FAQ() {
   return (
     <div className="relative mt-18 md:px-24 px-8 py-20 bg-white flex flex-col gap-4 items-center text-black">
-      <p className="font-bold md:text-4xl text-2xl">FAQ's</p>
+      <p className="font-bold md:text-4xl text-2xl">FAQ&apos;s</p>
       <span className="md:text-md text-sm text-gray-600">
         Providing answers to your questions
       </span>
