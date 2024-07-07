@@ -4,17 +4,16 @@ import Capabilities from "./components/Capabilities";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
-import Pricing from "./components/Pricing";
 import Process from "./components/Process";
 import Steps from "./components/Steps";
 import Testimonial from "./components/Testimonial";
-import Navbar from "./components/UI/Navbar";
+import Header from "./components/Header";
 import Work from "./components/Work";
 
 export default function Home() {
   return (
     <main className="bg-[#111204]">
-      <Navbar />
+      <Header />
       <Hero />
       <Process
         id="process"

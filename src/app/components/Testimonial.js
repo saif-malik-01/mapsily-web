@@ -12,11 +12,11 @@ function Card() {
         />
         <div className="mt-6">
           <h3 className="md:text-3xl text-xl font-bold">
-            Mapsilty is the best digital agency i have ever seen! Highly
+            Best digital agency I have ever seen! Highly
             Recommended!
           </h3>
           <p className="mt-4 text-justiy">
-            I recently hired Mapsilty for a custom web development project and
+            I recently hired Mapsily for a custom web development project and
             couldn&apos;t be happier with the results. The team was able to
             bring my unique ideas to life and create a website that truly stands
             out.
@@ -45,7 +45,7 @@ export default function Testimonial() {
       <p className="mt-2 text-center font-bold md:text-4xl text-2xl md:w-[40%]">
         Customer is Our Top Priority
       </p>
-      <span className="mt-2 md:text-md text-sm text-center text-gray-800 md:w-[40%]">
+      <span className="mt-2 md:text-[1rem] text-md text-center text-gray-800">
         We survey all of our clients, the results of which go directly to our
         CEO.
       </span>

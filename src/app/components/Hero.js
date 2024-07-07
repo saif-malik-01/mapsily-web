@@ -8,11 +8,11 @@ export default function Hero() {
         Bringing Your Dream Into{" "}
         <span className="text-[#B9FD50] italic">Reality</span>
       </h1>
-      <p className="md:text-sm text-xs md:max-w-[40%] text-gray-100">
+      <p className="md:text-[1.125rem] text-md md:max-w-[40%] text-gray-100">
         We increase revenue and ensure sustainable long-term growth for your
         business through powerful Webflow websites.
       </p>
-      <Button href="tel:+919389586440">Book A Meeting</Button>
+      <Button href="tel:+919389586440">Book a Free Call</Button>
       <div className="w-full flex items-center justify-center md:gap-6 gap-4">
         <span className="h-[1px] bg-[#B9FD50] md:w-[3%] w-[4%]"></span>
         <p className="font-bold md:text-sm text-xs">

@@ -11,10 +11,10 @@ function PriceCard() {
         <h3 className="md:w-[60%] font-bold md:text-6xl text-2xl text-center">
           Become part of the design revolution
         </h3>
-        <h4 className="md:w-[40%] text-center text-gray-300">
+        <h4 className="md:w-[40%] text-center text-xl text-gray-300">
           Jump on a membership and start requesting designs right away!
         </h4>
-        <Button href="tel:+919389586440">See Pricing</Button>
+        <Button href="tel:+919389586440">Get a Quote</Button>
       </div>
     </div>
   );
@@ -26,7 +26,7 @@ export function Question({ question, answer }) {
   return (
     <div
       onClick={() => setShow(!show)}
-      className="cursor-pointer mt-6 bg-black p-4 rounded-xl text-white gap-6"
+      className="cursor-pointer mt-6 bg-black p-4 rounded-xl text-white gap-6 h-fit"
     >
       <div className="flex justify-between items-center">
         <p>{question}</p>
@@ -59,7 +59,7 @@ export default function FAQ() {
       <span className="md:text-md text-sm text-gray-600">
         Providing answers to your questions
       </span>
-      <div className="md:w-[38%] w-[90%] md:mb-[28%] mb-[80%]">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-4 md:mb-[28%] mb-[80%]">
         <Question
           question="What is digital marketing?"
           answer="In the simplest way, we may describe digital marketing as a marketing tool that includes digital interface and/or which involves a phone, laptop, tablet, or another electronic device connected to internet for communication.
@@ -80,8 +80,12 @@ The business would need a strong and dynamic presence on world of internet to ca
 So eventually it depends on your skills, finances and scale of business to rope in a media agency or not. "
         />
         <Question
-          question="How much does digital marketing cost? "
+          question="How much does digital marketing cost?"
           answer="This is the most asked question by start ups or those who are new to digital marketing and much like any other marketing campaign, costs can vary dramatically from business to business. However, unlike traditional marketing, digital marketing cost is relatively lower and marketing spend is more measurable than traditional ways. You may need to spend higher depending on nature of business, geography and competition. That said the digital spend is variable and can be controlled by businesses depending on their marketing budget.  "
+        />
+         <Question
+          question="How much does it cost?"
+          answer="Costs vary based on servcies needed, with flexible pricing to fit your budget and goals."
         />
       </div>
       <PriceCard />

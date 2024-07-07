@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Button({
   children,
   mode = "container",
@@ -6,7 +8,7 @@ export default function Button({
   onClick,
 }) {
   return href ? (
-    <a
+    <Link
       href={href}
       className={`bg-${
         mode === "text"
@@ -14,10 +16,10 @@ export default function Button({
               border ? "border" : "text-white"
             } rounded-md border-black`
           : "[#B9FD50]"
-      } text-black cursor-pointer font-medium rounded-lg text-sm md:px-8 px-6 py-3 me-2 mb-2 focus:outline-none`}
+      } text-black cursor-pointer font-medium rounded-lg text-md md:px-8 px-6 py-4 focus:outline-none`}
     >
       {children}
-    </a>
+    </Link>
   ) : onClick ? (
     <button
       onClick={onClick}
@@ -28,7 +30,7 @@ export default function Button({
               border ? "border" : "text-white"
             } rounded-md border-black`
           : "[#B9FD50]"
-      } text-black font-medium rounded-lg text-sm md:px-8 px-6 py-3 me-2 mb-2 focus:outline-none`}
+      } text-black font-medium rounded-lg text-md md:px-8 px-6 py-4 focus:outline-none`}
     >
       {children}
     </button>
@@ -40,7 +42,7 @@ export default function Button({
               border ? "border" : "text-white"
             } rounded-md border-black`
           : "[#B9FD50]"
-      } text-black font-medium rounded-lg text-sm md:px-8 px-6 py-3 me-2 mb-2 focus:outline-none`}
+      } text-black font-medium rounded-lg text-md md:px-8 px-6 py-4 focus:outline-none`}
     >
       {children}
     </p>

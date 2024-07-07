@@ -1,6 +1,7 @@
 import { MdMailOutline, MdOutlineLocalPhone } from "react-icons/md";
-import { LuInstagram, LuFacebook, LuLinkedin } from "react-icons/lu";
+import { LuInstagram, LuFacebook, LuLinkedin, LuYoutube, LuTwitter } from "react-icons/lu";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -15,53 +16,61 @@ export default function Footer() {
           </p>
         </span>
         <span className="flex flex-col gap-4">
-          <a
+          <Link
             href="mailto:info@mapsily.com"
             className="cursor-pointer flex items-center gap-2 hover:text-[#B9FD50]"
           >
             <MdMailOutline size={20} className="hover:text-[#B9FD50]" />{" "}
             info@mapsily.com
-          </a>
-          <a
+          </Link>
+          <Link
             href="tel:+919389586440"
             className="cursor-pointer flex items-center gap-2 hover:text-[#B9FD50]"
           >
             <MdOutlineLocalPhone size={20} className="hover:text-[#B9FD50]" />{" "}
             +91 9389586440
-          </a>
+          </Link>
           <span className="flex gap-4">
-            <a href="https://www.facebook.com/mapsily" target="_blank">
+            <Link href="https://www.facebook.com/mapsily" target="_blank">
               <LuFacebook size={20} className="hover:text-[#B9FD50]" />
               <span className="text-[0px]">Facebook Link</span>
-            </a>
-            <a href="https://www.instagram.com/mapsily" target="_blank">
+            </Link>
+            <Link href="https://www.instagram.com/mapsily" target="_blank">
               <LuInstagram size={20} className="hover:text-[#B9FD50]" />
               <span className="text-[0px]">Instagram Link</span>
-            </a>
-            <a href="https://www.linkedin.com/mapsily" target="_blank">
+            </Link>
+            <Link href="https://www.linkedin.com/mapsily" target="_blank">
               <LuLinkedin size={20} className="hover:text-[#B9FD50]" />
               <span className="text-[0px]">Linkedin Link</span>
-            </a>
+            </Link>
+            <Link href="https://www.youtube.com/mapsily" target="_blank">
+              <LuYoutube size={20} className="hover:text-[#B9FD50]" />
+              <span className="text-[0px]">Youtube Link</span>
+            </Link>
+            <Link href="https://www.x.com/mapsily" target="_blank">
+              <LuTwitter size={20} className="hover:text-[#B9FD50]" />
+              <span className="text-[0px]">X Link</span>
+            </Link>
           </span>
         </span>
       </div>
       <div className="flex md:flex-row flex-col items-center justify-between border-t border-gray-700 mt-8 md:pt-8 pt-6">
         <span className="flex gap-4 items-center">
-          <a href="#process" className="hover:text-[#B9FD50] text-xs md:text-base">
+          <Link href="#process" className="hover:text-[#B9FD50] text-xs md:text-base">
             Process
-          </a>
-          <a href="#benefits" className="hover:text-[#B9FD50] text-xs md:text-base">
+          </Link>
+          <Link href="#benefits" className="hover:text-[#B9FD50] text-xs md:text-base">
             Benefits
-          </a>
-          <a href="#services" className="hover:text-[#B9FD50] text-xs md:text-base">
+          </Link>
+          <Link href="#services" className="hover:text-[#B9FD50] text-xs md:text-base">
             Services
-          </a>
-          <a href="#work" className="hover:text-[#B9FD50] text-xs md:text-base">
+          </Link>
+          <Link href="#work" className="hover:text-[#B9FD50] text-xs md:text-base">
             Portfolio
-          </a>
-          <a  href="#faq" className="hover:text-[#B9FD50] text-xs md:text-base">
+          </Link>
+          <Link  href="#faq" className="hover:text-[#B9FD50] text-xs md:text-base">
             FAQ
-          </a>
+          </Link>
         </span>
         <p className="mt-4">© 2024 Mapsily - All Right Reserved</p>
       </div>
