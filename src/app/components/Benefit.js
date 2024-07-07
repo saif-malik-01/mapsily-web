@@ -22,7 +22,7 @@ function Card({ Icon = () => {}, title, subtitle }) {
 
 export default function Benefits() {
   return (
-    <div className="py-20 md:px-24 px-6">
+    <section className="py-20 md:px-24 px-6">
       <table className="hidden md:block w-full text-sm text-left rtl:text-right text-gray-500">
         <tbody>
           <tr className="border-b border-gray-50">
@@ -107,6 +107,6 @@ export default function Benefits() {
         <Card />
         <Card />
       </div> */}
-    </div>
+    </section>
   );
 }

@@ -2,9 +2,9 @@ import Image from "next/image";
 
 function Card({ src, title, subtitle, description }) {
   return (
-    <div className="cursor-pointer flex md:flex-row flex-col gap-6 pr-6 items-center justify-between rounded-xl border border-lime-700 text-white">
-      <Image alt={"blog-" + title} src={src} width={220} height={220} />
-      <div className="flex flex-col gap-2">
+    <div className="cursor-pointer flex md:flex-row flex-col gap-6 items-center justify-between rounded-xl border border-lime-700 text-white">
+      <Image alt={"blog-" + title} src={src} width={220} height={220} className="md:w-auto w-full" />
+      <div className="flex flex-col gap-2 p-4">
         <span className="md:text-sm text-xs font-medium text-[#B9FD50]">
           {title}
         </span>

@@ -15,7 +15,7 @@ function Card() {
             Mapsilty is the best digital agency i have ever seen! Highly
             Recommended!
           </h3>
-          <p className="mt-4">
+          <p className="mt-4 text-justiy">
             I recently hired Mapsilty for a custom web development project and
             couldn&apos;t be happier with the results. The team was able to
             bring my unique ideas to life and create a website that truly stands

@@ -1,8 +1,11 @@
 import Button from "./UI/Button";
 
-export default function Process({ title, subtitle, description }) {
+export default function Process({ id, title, subtitle, description }) {
   return (
-    <div className="mt-20 md:px-28 px-6 flex flex-col md:items-start md:text-start text-center items-center">
+    <section
+      id={id}
+      className="pt-20 md:px-28 px-6 flex flex-col md:items-start md:text-start text-center items-center"
+    >
       <h2 className="text-xs md:text-sm text-font text-[#B9FD50] capitalize">
         {title}
       </h2>
@@ -15,6 +18,6 @@ export default function Process({ title, subtitle, description }) {
           <Button href="tel:+919389586440">See Pricing</Button>
         </span>
       </div>
-    </div>
+    </section>
   );
 }

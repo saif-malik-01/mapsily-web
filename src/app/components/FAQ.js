@@ -38,7 +38,11 @@ export function Question({ question, answer }) {
           )}
         </span>
       </div>
-      <div className={`${show ? "max-h-[1000px]" : "max-h-[0px]"} transition-all ease-in-out duration-400 overflow-hidden w-full text-gray-300`}>
+      <div
+        className={`${
+          show ? "max-h-[1000px]" : "max-h-[0px]"
+        } transition-all ease-in-out duration-400 overflow-hidden w-full text-gray-300`}
+      >
         <p>{answer}</p>
       </div>
     </div>
@@ -47,7 +51,10 @@ export function Question({ question, answer }) {
 
 export default function FAQ() {
   return (
-    <div className="relative mt-18 md:px-24 px-8 py-20 bg-white flex flex-col gap-4 items-center text-black">
+    <section
+      id="faq"
+      className="relative mt-18 md:px-24 px-8 py-20 bg-white flex flex-col gap-4 items-center text-black"
+    >
       <p className="font-bold md:text-4xl text-2xl">FAQ&apos;s</p>
       <span className="md:text-md text-sm text-gray-600">
         Providing answers to your questions
@@ -78,6 +85,6 @@ So eventually it depends on your skills, finances and scale of business to rope 
         />
       </div>
       <PriceCard />
-    </div>
+    </section>
   );
 }

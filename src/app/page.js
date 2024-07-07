@@ -17,6 +17,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Process
+        id="process"
         title="How We Work"
         subtitle="Get a dedicated design team at fraction of the cost."
         description="Grow your brand with high-quality design for a flat monthly fee. Work with senior designers. Subscribe and make as many requests as you need - no limits."
@@ -25,6 +26,7 @@ export default function Home() {
       <Work />
       <Capabilities />
       <Process
+        id="benefits"
         title="BENEFITS"
         subtitle="The design subscription that connects you to your dream team"
         description="A subscription can alleviate the stress of staffing, managing expenses, or make design calls like a Creative Director. We partner with you to ensure that your design elevates your brand to new levels."

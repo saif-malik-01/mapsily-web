@@ -20,7 +20,7 @@ export default function Hero() {
         </p>
         <span className="h-[1px] bg-[#B9FD50] md:w-[3%] w-[4%]"></span>
       </div>
-      <div className="w-[80%] bg-zinc-800 h-[120px] flex items-center px-8 justify-evenly rounded-xl">
+      <div className="md:w-[80%] w-[95%] bg-zinc-800 py-4 flex md:overflow-x-hidden overflow-x-scroll gap-8 items-center px-8 justify-evenly rounded-xl">
         <Image
           alt="mapsily-client-maizi"
           src="/company-2.png"

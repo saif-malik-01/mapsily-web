@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="flex flex-col gap-4 md:flex-row justify-between md:items-center">
         <span className="flex flex-col gap-4 md:w-[40%]">
           <Image alt="mapsily-logo" src="/logo.png" width={150} height={100} />
-          <p className="text-gray-300">
+          <p className="text-gray-300 text-justify">
             Mapsily - Bringing Your Dream Into Reality the leading Marketing, An
             agency based in the India, working with top-tier clients&rsquo; from
             start-ups to enterprises.
@@ -32,12 +32,15 @@ export default function Footer() {
           <span className="flex gap-4">
             <a href="https://www.facebook.com/mapsily" target="_blank">
               <LuFacebook size={20} className="hover:text-[#B9FD50]" />
+              <span className="text-[0px]">Facebook Link</span>
             </a>
             <a href="https://www.instagram.com/mapsily" target="_blank">
               <LuInstagram size={20} className="hover:text-[#B9FD50]" />
+              <span className="text-[0px]">Instagram Link</span>
             </a>
             <a href="https://www.linkedin.com/mapsily" target="_blank">
               <LuLinkedin size={20} className="hover:text-[#B9FD50]" />
+              <span className="text-[0px]">Linkedin Link</span>
             </a>
           </span>
         </span>
@@ -56,7 +59,7 @@ export default function Footer() {
           <a href="#work" className="hover:text-[#B9FD50] text-xs md:text-base">
             Portfolio
           </a>
-          <a href="#faq" className="hover:text-[#B9FD50] text-xs md:text-base">
+          <a  href="#faq" className="hover:text-[#B9FD50] text-xs md:text-base">
             FAQ
           </a>
         </span>

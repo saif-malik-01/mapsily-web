@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Work() {
   return (
-    <div className="bg-white text-center text-black mt-16 md:px-28 px-6 pt-16 flex flex-col items-center">
+    <div id="work" className="bg-white text-center text-black mt-16 md:px-28 px-6 pt-16 flex flex-col items-center">
       <h2 className="md:text-4xl text-2xl font-bold">Our Beautiful Works</h2>
       <p className="md:w-[50%] my-4 md:text-md text-sm text-gray-800">
         We help our clients grow their bottom-line with clear and professional
