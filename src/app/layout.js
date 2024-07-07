@@ -22,6 +22,16 @@ export const metadata = {
   title: "Mapsily - India's Leading Marketing Agency",
   description:
     "Mapsily is the leading marketing agency offering SEO, social media, PPC, Web Design, Influencer Marketing, Video Production, etc.",
+  author: "Mapsily",
+  headerTitle: "Bringing Your Dream Into Reality",
+  language: "en-us",
+  siteUrl: "https://mapsily.com",
+  siteLogo: "/logo.png",
+  email: "info@mapsily.com",
+  facebook: "https://facebook.com/mapsily",
+  youtube: "https://youtube.com/mapsily",
+  linkedin: "https://www.linkedin.com/mapsily/",
+  locale: "en-US",
 };
 
 export default function RootLayout({ children }) {

@@ -11,7 +11,7 @@ function PriceCard() {
         <h3 className="md:w-[60%] font-bold md:text-6xl text-2xl text-center">
           Become part of the design revolution
         </h3>
-        <h4 className="md:w-[40%] text-center text-xl text-gray-300">
+        <h4 className="md:w-[40%] text-center md:text-xl text-md text-gray-300">
           Jump on a membership and start requesting designs right away!
         </h4>
         <Button href="tel:+919389586440">Get a Quote</Button>
@@ -59,7 +59,7 @@ export default function FAQ() {
       <span className="md:text-md text-sm text-gray-600">
         Providing answers to your questions
       </span>
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-4 md:mb-[28%] mb-[80%]">
+      <div className="grid md:grid-cols-2 grid-cols-1 md:gap-4 md:mb-[28%] mb-[80%]">
         <Question
           question="What is digital marketing?"
           answer="In the simplest way, we may describe digital marketing as a marketing tool that includes digital interface and/or which involves a phone, laptop, tablet, or another electronic device connected to internet for communication.

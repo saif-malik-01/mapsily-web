@@ -14,7 +14,7 @@ export default function Process({ id, title, subtitle, description }) {
           {subtitle}
         </p>
         <span className="md:w-[60%] md:text-start text-center">
-          <p className="mb-10 text-sm md:text-[1.125rem] text-gray-300 text-justify leading-[1.5rem]">{description}</p>
+          <p className="mb-10 text-sm md:text-[1.125rem] text-gray-300 md:text-justify text-center leading-[1.5rem]">{description}</p>
           <Button href="tel:+919389586440">Get a Quote</Button>
         </span>
       </div>

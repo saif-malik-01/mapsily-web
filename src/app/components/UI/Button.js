@@ -16,7 +16,7 @@ export default function Button({
               border ? "border" : "text-white"
             } rounded-md border-black`
           : "[#B9FD50]"
-      } text-black cursor-pointer font-medium rounded-lg text-md md:px-8 px-6 py-4 focus:outline-none`}
+      } text-black cursor-pointer font-medium rounded-lg text-md md:px-8 px-6 md:py-4 py-3 focus:outline-none`}
     >
       {children}
     </Link>
@@ -30,7 +30,7 @@ export default function Button({
               border ? "border" : "text-white"
             } rounded-md border-black`
           : "[#B9FD50]"
-      } text-black font-medium rounded-lg text-md md:px-8 px-6 py-4 focus:outline-none`}
+      } text-black font-medium rounded-lg text-md md:px-8 px-6 md:py-4 py-3 focus:outline-none`}
     >
       {children}
     </button>
@@ -42,7 +42,7 @@ export default function Button({
               border ? "border" : "text-white"
             } rounded-md border-black`
           : "[#B9FD50]"
-      } text-black font-medium rounded-lg text-md md:px-8 px-6 py-4 focus:outline-none`}
+      } text-black font-medium rounded-lg text-md md:px-8 px-6 md:py-4 py-3 focus:outline-none`}
     >
       {children}
     </p>
