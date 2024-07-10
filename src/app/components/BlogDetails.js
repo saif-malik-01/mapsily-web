@@ -1,22 +1,14 @@
-// import Link from "next/link";
-// import React from "react";
-// import { slug } from "github-slugger";
+import React from "react";
 
-// const BlogDetails = ({ blog, slug: blogSlug }) => {
-//   return (
-//     <div className="px-2  md:px-10 bg-accent dark:bg-accentDark text-light dark:text-dark py-2 flex items-center justify-around flex-wrap text-lg sm:text-xl font-medium mx-5  md:mx-10 rounded-lg">
-//       <time className="m-3">
-//         date
-//       </time>
-//       <span className="m-3">
-//         2
-//       </span>
-//       <div className="m-3">{blog.readingTime.text}</div>
-//       <Link href={`/categories/${slug(blog.tags[0])}`} className="m-3">
-//         #{blog.tags[0]}
-//       </Link>
-//     </div>
-//   );
-// };
+const BlogDetails = ({ blog }) => {
+  return (
+    <div className="mb-8 mt-4 md:mt-0 px-2 md:px-10 bg-white text-black py-2 flex items-center justify-around flex-wrap text-sm sm:text-xl font-medium mx-5 md:mx-10 rounded-lg">
+      <time className="m-3">{new Date(blog.publishedAt).toLocaleDateString("en-US")}</time>
+      <span className="m-3">10+</span>
+      <div className="m-3">{blog.readingTime.text}</div>
+      <span className="m-3 capitalize">{blog.tags[0]}</span>
+    </div>
+  );
+};
 
-// export default BlogDetails;
+export default BlogDetails;
