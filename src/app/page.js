@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <>
       <Script
-        id="mapsily-schema"
+        id="mapsily-root-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(jsonLd),

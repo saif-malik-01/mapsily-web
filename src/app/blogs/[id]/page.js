@@ -6,6 +6,7 @@ import siteMetadata from "@/utils/siteMetaData";
 import Header from "@/app/components/Header";
 import Script from "next/script";
 import Link from "next/link";
+import { slug } from "github-slugger";
 
 export async function generateStaticParams() {
   return allBlogs.map((blog) => ({ id: blog._raw.flattenedPath }));
@@ -108,6 +109,7 @@ export default function BlogPage({ params }) {
   return (
     <main className="bg-black">
       <Script
+        id={`mapsily-blog-${slug(blog.title, true)}-schema`}
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
