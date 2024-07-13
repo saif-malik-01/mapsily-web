@@ -8,7 +8,7 @@ updatedAt: "2024-07-08"
 author: "Mapsily"
 isPublished: true
 tags:
-  - maketing
+  - marketing
   - digital
   - bussiness
 ---
